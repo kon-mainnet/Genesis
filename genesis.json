@@ -1,0 +1,51 @@
+{
+	"name": "KON",
+	"engine": {
+		"authorityRound": {
+			"params": {
+				"stepDuration": "1",
+				"emptyStepsTransition": "0",
+				"maximumEmptySteps": "60",
+				"validators" : {
+					"multi": {
+						"0": { "list": ["0xf7c7bcccc6c9450e42f407085ee4b8a98fc243a3", "0xb374b2a137340cf5e27924f046ea07cbef99f147", "0xfb770327a71ae28d69d45b0ecbb52485222c4153" ] }
+					}
+				}
+			}
+		}
+	},
+	"genesis": {
+		"seal": {
+			"authorityRound": {
+				"step": "0x0",
+				"signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+			}
+		},
+		"difficulty": "0x20000",
+		"gasLimit": "0x2fefd8"
+	},
+	"params": {
+		"networkID" : "0x4341",
+		"gasLimitBoundDivisor": "0x400",
+		"maximumExtraDataSize": "0x2000",
+		"minGasLimit": "0x1388",
+		"eip150Transition": "0x0",
+		"eip160Transition": "0x0",
+		"eip161abcTransition": "0x0",
+		"eip161dTransition": "0x0",
+		"eip155Transition": "0x0",
+		"eip98Transition": "0x7fffffffffffff",
+		"maxCodeSize": 24576,
+		"maxCodeSizeTransition": "0x0",
+		"eip140Transition": "0x0",
+		"eip210Transition": "0x0",
+		"eip210ContractGas": "0x0",
+		"eip211Transition": "0x0",
+		"eip214Transition": "0x0",
+		"eip658Transition": "0x0",
+		"eip145Transition": "0x0",
+		"eip1014Transition": "0x0",
+		"eip1052Transition": "0x0"
+	},
+	"accounts": {}
+}
