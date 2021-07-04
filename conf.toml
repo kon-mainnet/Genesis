@@ -1,0 +1,26 @@
+[parity]
+chain = "kon-mainnet.json"
+
+[rpc]
+#  JSON-RPC will be listening for connections on IP 0.0.0.0.
+interface = "0.0.0.0"
+port = 8545
+cors = ["http://3.35.90.29:8000", "http://localhost:8000", "", "*"]
+# Only selected APIs will be exposed over this interface.
+apis = ["web3", "eth", "pubsub", "net", "parity", "traces", "personal"]
+
+[account]
+password = ["node.pwds"]
+
+[network]
+# TODO : make boot node file
+bootnodes = ["enode://3c730c26d5fc8c6dbabe385f280c820d93a8e4577f0567fc22b77318810f4dac2e48ba9af8836a8d29c33b91de804e8cff1070a614c0d7d73d4e6713d504c961@172.31.53.113:30303", "enode://33a29de26ff45a47b6eedba3fe9fea9438145ac36ba718f70c902e65ccc1583860ae83e36252a0131dc061909d80d303d2a89e24968d50085b027e28e9d212fd@172.31.49.175:30303"]
+
+
+[mining]
+# Account address to receive reward when block is mined.
+author = "0xf7c7bcccc6c9450e42f407085ee4b8a98fc243a3"
+# Account to sign consensus messages and issue blocks for non-PoW chains.
+engine_signer = "0xf7c7bcccc6c9450e42f407085ee4b8a98fc243a3"
+# Prepare a block to seal even when there are no miners connected.
+force_sealing = true
