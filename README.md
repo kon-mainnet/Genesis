@@ -9,6 +9,7 @@
 git submodule update --init --recursive
 cd openethereum
 # 해당 폴더 README 따라서 openethereum 컴파일 or Openethereum 최신리눅스 빌드 바이너리 파일 다운로드
+# https://github.com/openethereum/openethereum/releases/tag/v3.2.6
 ```
 
 Config 파일의 경우 Openethereum Config 파일 위치 찾아서 연동
