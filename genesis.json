@@ -5,6 +5,11 @@
       "params": {
         "stepDuration": "1",
         "emptyStepsTransition": "0",
+				"blockReward": {
+					"0x0": "0x0",
+					"0x1D7310": "100000000000000000000000000",
+					"0x1D7311": "0x0"
+				},
         "maximumEmptySteps": "60",
         "validators" : {
           "multi": {
