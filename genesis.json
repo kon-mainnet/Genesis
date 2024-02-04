@@ -7,8 +7,8 @@
         "emptyStepsTransition": "0",
 				"blockReward": {
 					"0x0": "0x0",
-					"0x1D3F80": "200000000000000000000000000",
-					"0x1D3F81": "0x0"
+					"0x1D4C00": "200000000000000000000000000",
+					"0x1D4C01": "0x0"
 				},
         "maximumEmptySteps": "60",
         "validators" : {
