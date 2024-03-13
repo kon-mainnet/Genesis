@@ -5,18 +5,23 @@
       "params": {
         "stepDuration": "1",
         "emptyStepsTransition": "0",
-        "blockRewards": {
+        "blockReward": {
           "0x0": "0x0",
           "0x1D4C00": "0xA56FA5B99019A5C8000000",
           "0x1D4C01": "0x0",
-          "0x2932E0": "0x295BE96E640669720000000",
-          "0x2932E1": "0x0"
+          "0x24C1C4": "0x295BE96E640669720000000",
+          "0x24C1C5": "0x0"
         },
         "maximumEmptySteps": "60",
-        "validators" : {
+        "validators": {
           "multi": {
-            "0": { "list": ["0xf7c7bcccc6c9450e42f407085ee4b8a98fc243a3", "0xb374b2a137340cf5e27924f046ea07cbef99f147", "0xfb770327a71ae28d69d45b0ecbb52485222c4153" ] },
-            "0x2932E0": { "contract": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef" }
+            "0": {
+              "list": [
+                "0xf7c7bcccc6c9450e42f407085ee4b8a98fc243a3",
+                "0xb374b2a137340cf5e27924f046ea07cbef99f147",
+                "0xfb770327a71ae28d69d45b0ecbb52485222c4153"
+              ]
+            }
           }
         }
       }
@@ -33,7 +38,7 @@
     "gasLimit": "0x2fefd8"
   },
   "params": {
-    "networkID" : "0x4341",
+    "networkID": "0x4341",
     "gasLimitBoundDivisor": "0x400",
     "maximumExtraDataSize": "0x2000",
     "minGasLimit": "0x1388",
@@ -54,208 +59,203 @@
     "eip145Transition": "0x0",
     "eip1014Transition": "0x0",
     "eip1052Transition": "0x0",
-		"eip1283Transition": "0x2932E0",
-		"eip1344Transition": "0x2932E0",
-		"eip1706Transition": "0x2932E0",
-		"eip1884Transition": "0x2932E0",
-		"eip2028Transition": "0x2932E0",
-		"eip2929Transition": "0x2932E0",
-		"eip2930Transition": "0x2932E0",
-		"eip1559Transition": "0x2932E0",
-		"eip3198Transition": "0x2932E0",
-		"eip3541Transition": "0x2932E0",
-		"eip3529Transition": "0x2932E0",
-		"eip1559BaseFeeMaxChangeDenominator": "0x40",
-		"eip1559ElasticityMultiplier": "0x10",
-		"eip1559BaseFeeInitialValue": "0x9C7652400"
+    "eip1283Transition": "0x24C1C4",
+    "eip1344Transition": "0x24C1C4",
+    "eip1706Transition": "0x24C1C4",
+    "eip1884Transition": "0x24C1C4",
+    "eip2028Transition": "0x24C1C4",
+    "eip2929Transition": "0x24C1C4",
+    "eip2930Transition": "0x24C1C4",
+    "eip1559Transition": "0x24C1C4",
+    "eip3198Transition": "0x24C1C4",
+    "eip3541Transition": "0x24C1C4",
+    "eip3529Transition": "0x24C1C4",
+    "eip1559BaseFeeMaxChangeDenominator": "0x40",
+    "eip1559ElasticityMultiplier": "0x10",
+    "eip1559BaseFeeInitialValue": "0x9C7652400"
   },
-  "nodes": [
-    "enode://33a29de26ff45a47b6eedba3fe9fea9438145ac36ba718f70c902e65ccc1583860ae83e36252a0131dc061909d80d303d2a89e24968d50085b027e28e9d212fd@3.35.197.11:30303",
-    "enode://4675f809d0138063b0ca046e9de1534f1d05d6f62d3aaf41309b407021ca0df93cd8208bc44eb9368a98fb1638f56e79bc1464dd93460a075dd002e58aeba8c0@3.35.200.2:30303",
-    "enode://3c730c26d5fc8c6dbabe385f280c820d93a8e4577f0567fc22b77318810f4dac2e48ba9af8836a8d29c33b91de804e8cff1070a614c0d7d73d4e6713d504c961@3.35.90.29:30303"
-  ],
-	"accounts": {
-		"0x0000000000000000000000000000000000000001": {
-			"builtin": {
-				"name": "ecrecover",
-				"pricing": {
-					"linear": {
-						"base": 3000,
-						"word": 0
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000002": {
-			"builtin": {
-				"name": "sha256",
-				"pricing": {
-					"linear": {
-						"base": 60,
-						"word": 12
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000003": {
-			"builtin": {
-				"name": "ripemd160",
-				"pricing": {
-					"linear": {
-						"base": 600,
-						"word": 120
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000004": {
-			"builtin": {
-				"name": "identity",
-				"pricing": {
-					"linear": {
-						"base": 15,
-						"word": 3
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000005": {
-			"builtin": {
-				"name": "modexp",
-				"pricing": {
-					"0x2932E0": {
-						"info": "EIP-2565: ModExp Gas Cost. 0x2932E0",
-						"price": {
-							"modexp2565": {}
-						}
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000006": {
-			"builtin": {
-				"name": "alt_bn128_add",
-				"pricing": {
-					"0x2932E0": {
-						"info": "EIP 1108 transition at block 0x2932E0",
-						"price": { "alt_bn128_const_operations": { "price": 150 }}
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000007": {
-			"builtin": {
-				"name": "alt_bn128_mul",
-				"pricing": {
-					"0x2932E0": {
-						"info": "EIP 1108 transition at block 0x2932E0",
-						"price": { "alt_bn128_const_operations": { "price": 6000 }}
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000008": {
-			"builtin": {
-				"name": "alt_bn128_pairing",
-				"pricing": {
-					"0x2932E0": {
-						"info": "EIP 1108 transition at block 0x2932E0",
-						"price": { "alt_bn128_pairing": { "base": 45000, "pair": 34000 }}
-					}
-				}
-			}
-		},
-		"0x0000000000000000000000000000000000000009": {
-			"builtin": {
-				"name": "blake2_f",
-				"activate_at": "0x2932E0",
-				"pricing": {
-					"blake2_f": {
-						"gas_per_round": 1
-					}
-				}
-			}
-		},
-		"000000000000000000000000000000000000000a": {
-			"builtin": {
-				"name": "bls12_381_g1_add",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_const_operations": { "price": 600 }
-				}
-			}
-		},
-		"000000000000000000000000000000000000000b": {
-			"builtin": {
-				"name": "bls12_381_g1_mul",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_const_operations": { "price": 12000 }
-				}
-			}
-		},
-		"000000000000000000000000000000000000000c": {
-			"builtin": {
-				"name": "bls12_381_g1_multiexp",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_g1_multiexp": { "base": 12000 }
-				}
-			}
-		},
-		"000000000000000000000000000000000000000d": {
-			"builtin": {
-				"name": "bls12_381_g2_add",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_const_operations": { "price": 4500 }
-				}
-			}
-		},
-		"000000000000000000000000000000000000000e": {
-			"builtin": {
-				"name": "bls12_381_g2_mul",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_const_operations": { "price": 55000 }
-				}
-			}
-		},
-		"000000000000000000000000000000000000000f": {
-			"builtin": {
-				"name": "bls12_381_g2_multiexp",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_g2_multiexp": { "base": 55000 }
-				}
-			}
-		},
-		"0000000000000000000000000000000000000010": {
-			"builtin": {
-				"name": "bls12_381_pairing",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_pairing": { "base": 115000, "pair": 23000 }
-				}
-			}
-		},
-		"0000000000000000000000000000000000000011": {
-			"builtin": {
-				"name": "bls12_381_fp_to_g1",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_const_operations": { "price": 5500 }
-				}
-			}
-		},
-		"0000000000000000000000000000000000000012": {
-			"builtin": {
-				"name": "bls12_381_fp2_to_g2",
-				"activate_at": "0x7fffffffffffff",
-				"pricing": {
-					"bls12_const_operations": { "price": 110000 }
-				}
-			}
-		}
-	}
+  "accounts": {
+    "0x0000000000000000000000000000000000000001": {
+      "builtin": {
+        "name": "ecrecover",
+        "pricing": {
+          "linear": {
+            "base": 3000,
+            "word": 0
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000002": {
+      "builtin": {
+        "name": "sha256",
+        "pricing": {
+          "linear": {
+            "base": 60,
+            "word": 12
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000003": {
+      "builtin": {
+        "name": "ripemd160",
+        "pricing": {
+          "linear": {
+            "base": 600,
+            "word": 120
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000004": {
+      "builtin": {
+        "name": "identity",
+        "pricing": {
+          "linear": {
+            "base": 15,
+            "word": 3
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000005": {
+      "builtin": {
+        "name": "modexp",
+        "pricing": {
+          "0x24C1C4": {
+            "info": "EIP-2565: ModExp Gas Cost. 0x24C1C4",
+            "price": {
+              "modexp2565": {}
+            }
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000006": {
+      "builtin": {
+        "name": "alt_bn128_add",
+        "pricing": {
+          "0x24C1C4": {
+            "info": "EIP 1108 transition at block 0x24C1C4",
+            "price": { "alt_bn128_const_operations": { "price": 150 } }
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000007": {
+      "builtin": {
+        "name": "alt_bn128_mul",
+        "pricing": {
+          "0x24C1C4": {
+            "info": "EIP 1108 transition at block 0x24C1C4",
+            "price": { "alt_bn128_const_operations": { "price": 6000 } }
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000008": {
+      "builtin": {
+        "name": "alt_bn128_pairing",
+        "pricing": {
+          "0x24C1C4": {
+            "info": "EIP 1108 transition at block 0x24C1C4",
+            "price": { "alt_bn128_pairing": { "base": 45000, "pair": 34000 } }
+          }
+        }
+      }
+    },
+    "0x0000000000000000000000000000000000000009": {
+      "builtin": {
+        "name": "blake2_f",
+        "activate_at": "0x24C1C4",
+        "pricing": {
+          "blake2_f": {
+            "gas_per_round": 1
+          }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000a": {
+      "builtin": {
+        "name": "bls12_381_g1_add",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_const_operations": { "price": 600 }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000b": {
+      "builtin": {
+        "name": "bls12_381_g1_mul",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_const_operations": { "price": 12000 }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000c": {
+      "builtin": {
+        "name": "bls12_381_g1_multiexp",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_g1_multiexp": { "base": 12000 }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000d": {
+      "builtin": {
+        "name": "bls12_381_g2_add",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_const_operations": { "price": 4500 }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000e": {
+      "builtin": {
+        "name": "bls12_381_g2_mul",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_const_operations": { "price": 55000 }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000f": {
+      "builtin": {
+        "name": "bls12_381_g2_multiexp",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_g2_multiexp": { "base": 55000 }
+        }
+      }
+    },
+    "0000000000000000000000000000000000000010": {
+      "builtin": {
+        "name": "bls12_381_pairing",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_pairing": { "base": 115000, "pair": 23000 }
+        }
+      }
+    },
+    "0000000000000000000000000000000000000011": {
+      "builtin": {
+        "name": "bls12_381_fp_to_g1",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_const_operations": { "price": 5500 }
+        }
+      }
+    },
+    "0000000000000000000000000000000000000012": {
+      "builtin": {
+        "name": "bls12_381_fp2_to_g2",
+        "activate_at": "0x7fffffffffffff",
+        "pricing": {
+          "bls12_const_operations": { "price": 110000 }
+        }
+      }
+    }
+  }
 }
