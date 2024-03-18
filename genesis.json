@@ -70,8 +70,8 @@
     "eip3198Transition": "0x24C1C4",
     "eip3541Transition": "0x24C1C4",
     "eip3529Transition": "0x24C1C4",
-    "eip1559BaseFeeMaxChangeDenominator": "0x40",
-    "eip1559ElasticityMultiplier": "0x10",
+    "eip1559BaseFeeMaxChangeDenominator": "0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "eip1559ElasticityMultiplier": "0x1",
     "eip1559BaseFeeInitialValue": "0x9C7652400"
   },
   "accounts": {
